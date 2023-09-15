@@ -39,7 +39,7 @@
 
         combo_enter {
             timeout-ms = <30>;
-            key-positions = <17 18>;
+            key-positions = <16 17>;
             bindings = <&kp ENTER>;
         };
     };
@@ -54,16 +54,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     //      0   1   2       3   4   5
@@ -74,7 +64,7 @@
 
         alpha1 {
             bindings = <
-                                &ht LC(C) W     &ht LC(S) F     &ht LC(V) P                 &kp L           &kp U           &kp Y
+                                &as LC(C) W     &as LC(S) F     &as LC(V) P                 &kp L           &kp U           &kp Y
                 &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI O
                                                 &lt AL2 TAB     &lt NAV SPC                 &lt NUM BSPC    &lt FUN DEL
             >;
@@ -83,8 +73,8 @@
         alpha2 {
             bindings = <
                                 AS(B)           AS(G)           AS(V)                       AS(K)           AS(M)           AS(J)
-                AS(Q)           AS(Z)           AS(X)           AS(C)                       AS(H)           AS(DOT)         AS(COMMA)       AS(FSLH)
-                                                &none           &none                       AS(SQT)         AS(SEMI)
+                AS(Q)           AS(Z)           AS(X)           AS(C)                       AS(H)           AS(D)         AS(COMMA)       AS(SEMI)
+                                                &none           &none                       AS(DOT)         AS(FSLH)
             >;
         };
 
@@ -107,7 +97,7 @@
         fun {
             bindings = <
                                 &kp PSCRN       &kp F2          &kp F5                      &kp LC(Z)       &none           &kp LC(Y)
-                &none           &kp F10         &kp F11         &ht LC(F12) F12             &none           &none           &none           &none
+                &none           &kp F10         &kp F11         &as LC(F12) F12             AS(SQT)         &none           &none           &none
                                                 &none           &none                       &none           &none
             >;
         };
