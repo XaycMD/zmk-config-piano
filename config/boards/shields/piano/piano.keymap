@@ -73,7 +73,7 @@
         alpha2 {
             bindings = <
                                 AS(B)           AS(G)           AS(V)                       AS(K)           AS(M)           AS(J)
-                AS(Q)           AS(Z)           AS(X)           AS(C)                       AS(H)           AS(D)         AS(FSLSH)         AS(SEMI)
+                AS(Q)           AS(Z)           AS(X)           AS(C)                       AS(H)           AS(D)         AS(FSLH)         AS(SEMI)
                                                 &none           &none                       AS(DOT)         AS(COMMA)
             >;
         };
