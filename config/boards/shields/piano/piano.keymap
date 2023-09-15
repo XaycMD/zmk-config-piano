@@ -19,7 +19,7 @@
     flavor = "tap-preferred";
 };
 
-#define AS(keycode) &td LS(keycode) keycode
+#define AS(keycode) &htd LS(keycode) keycode
 
 // Layers
 #define AL1 0
@@ -45,7 +45,7 @@
     };
 
     behaviors {
-        td: tap_dance {
+        htd: tap_dance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_DANCE";
             #binding-cells = <2>;
@@ -63,7 +63,7 @@
 
         alpha1 {
             bindings = <
-                                &td LC(C) W     &td LC(S) F     &td LC(V) P                 &kp L           &kp U           &kp Y
+                                &htd LC(C) W    &htd LC(S) F    &htd LC(V) P                 &kp L           &kp U           &kp Y
                 &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI O
                                                 &lt AL2 TAB     &lt NAV SPC                 &lt NM1 BSPC    &lt FUN DEL
             >;
