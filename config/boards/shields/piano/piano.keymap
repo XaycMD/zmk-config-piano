@@ -64,7 +64,7 @@
 
         alpha1 {
             bindings = <
-                                &as LC(C) W     &as LC(S) F     &as LC(V) P                 &kp L           &kp U           &kp Y
+                                &as LC(C) W     &as LC(X) F     &as LC(V) P                 &as LC(Z) L     &as LC(S) U     &as LC(Y) Y
                 &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI O
                                                 &lt AL2 TAB     &lt NAV SPC                 &lt NUM BSPC    &lt FUN DEL
             >;
@@ -73,7 +73,7 @@
         alpha2 {
             bindings = <
                                 AS(B)           AS(G)           AS(V)                       AS(K)           AS(M)           AS(J)
-                AS(Q)           AS(Z)           AS(X)           AS(C)                       AS(H)           AS(D)         AS(COMMA)       AS(SEMI)
+                AS(Q)           AS(Z)           AS(X)           AS(C)                       AS(H)           AS(D)         AS(COMMA)         AS(SEMI)
                                                 &none           &none                       AS(DOT)         AS(FSLH)
             >;
         };
@@ -96,7 +96,7 @@
 
         fun {
             bindings = <
-                                &kp PSCRN       &kp F2          &kp F5                      &kp LC(Z)       &none           &kp LC(Y)
+                                &kp PSCRN       &kp F2          &kp F5                      &none           &none           &none
                 &none           &kp F10         &kp F11         &as LC(F12) F12             AS(SQT)         &none           &none           &none
                                                 &none           &none                       &none           &none
             >;
