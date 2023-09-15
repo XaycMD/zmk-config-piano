@@ -19,7 +19,7 @@
     flavor = "tap-preferred";
 };
 
-#define AS(keycode) &htd LS(keycode) keycode
+#define AS(keycode) &as LS(keycode) keycode
 
 // Layers
 #define AL1 0
@@ -45,9 +45,9 @@
     };
 
     behaviors {
-        htd: tap_dance {
+        as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_DANCE";
+            label = "AUTO_SHIFT";
             #binding-cells = <2>;
             tapping_term_ms = <200>;
             quick_tap_ms = <0>;
@@ -55,6 +55,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
+
     //      0   1   2       3   4   5
     //  6   7   8   9       10  11  12  13
     //          14  15      16  17
@@ -63,9 +64,9 @@
 
         alpha1 {
             bindings = <
-                                &htd LC(C) W    &htd LC(S) F    &htd LC(V) P                 &kp L           &kp U           &kp Y
+                                &as LC(C) W     &as LC(S) F     &as LC(V) P                 &kp L           &kp U           &kp Y
                 &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI O
-                                                &lt AL2 TAB     &lt NAV SPC                 &lt NM1 BSPC    &lt FUN DEL
+                                                &lt AL2 TAB     &lt NAV SPC                 &lt NUM BSPC    &lt FUN DEL
             >;
         };
 
@@ -85,10 +86,18 @@
             >;
         };
 
+        nav {
+            bindings = <
+                                &none           &kp PG_UP       &none                       &none           &kp UP          &none
+                &none           &kp HOME        &kp PG_DN       &kp END                     &kp LEFT        &kp DOWN        &kp RIGHT       &none
+                                                &none           &none                       &none           &none
+            >;
+        };
+
         fun {
             bindings = <
                                 &kp PSCRN       &kp F2          &kp F5                      &kp LC(Z)       &none           &kp LC(Y)
-                &none           &kp F10         &kp F11         &td LC(F12) F12             &none           &none           &none           &none
+                &none           &kp F10         &kp F11         &as LC(F12) F12             &none           &none           &none           &none
                                                 &none           &none                       &none           &none
             >;
         };
