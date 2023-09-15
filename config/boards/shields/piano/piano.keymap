@@ -66,7 +66,7 @@
             bindings = <
                                 &as LC(C) W     &as LC(X) F     &as LC(V) P                 &as LC(Z) L     &as LC(S) U     &as LC(Y) Y
                 &mt LGUI A      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT I      &mt RGUI O
-                                                &lt AL2 TAB     &lt NAV SPC                 &lt NUM BSPC    &lt FUN DEL
+                                                &lt AL2 SPC     &lt NAV TAB                 &lt NUM BSPC    &lt FUN DEL
             >;
         };
 
