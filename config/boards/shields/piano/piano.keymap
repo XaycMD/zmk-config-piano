@@ -82,17 +82,17 @@
 
         alpha2 {
             bindings = <
-                                &kp AS(B)       &kp AS(G)       &kp AS(V)                   &kp AS(K)       &kp AS(M)       &kp AS(J)
-                &kp AS(Q)       &kp AS(Z)       &kp AS(X)       &kp AS(C)                   &kp AS(H)       &kp AS(DOT)     &kp AS(COMMA)   &kp AS(FSLH)
-                                                &none           &none                       &kp AS(SQT)     &kp AS(SEMI)
+                                AS(B)           AS(G)           AS(V)                       AS(K)           AS(M)           AS(J)
+                AS(Q)           AS(Z)           AS(X)           AS(C)                       AS(H)           AS(DOT)         AS(COMMA)       AS(FSLH)
+                                                &none           &none                       AS(SQT)         AS(SEMI)
             >;
         };
 
         num {
             bindings = <
-                                &kp AS(N1)      &kp AS(N2)      &kp AS(N3)                  &kp AS(N7)      &kp AS(N8)      &kp AS(N9)
-                &kp AS(GRAVE)   &kp AS(N4)      &kp AS(N5)      &kp AS(N6)                  &kp AS(N0)      &kp AS(LBKT)    &kp AS(RBKT)    &kp RPAR
-                                                &kp AS(MINUS)   &kp AS(EQUAL)               &none           &kp LPAR
+                                AS(N1)          AS(N2)          AS(N3)                      AS(N7)          AS(N8)          AS(N9)
+                AS(GRAVE)       AS(N4)          AS(N5)          AS(N6)                      AS(N0)          AS(LBKT)        AS(RBKT)        RPAR
+                                                AS(MINUS)       AS(EQUAL)                   &none           LPAR
             >;
         };
 
