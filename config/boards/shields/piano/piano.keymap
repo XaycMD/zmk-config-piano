@@ -81,7 +81,7 @@
         num {
             bindings = <
                                 AS(N1)          AS(N2)          AS(N3)                      AS(N7)          AS(N8)          AS(N9)
-                AS(GRAVE)       AS(N4)          AS(N5)          AS(N6)                      AS(N0)          AS(LBKT)        AS(RBKT)        &none
+                AS(GRAVE)       AS(N4)          AS(N5)          AS(N6)                      AS(N0)          AS(LBKT)        AS(RBKT)        AS(BSLH)
                                                 AS(MINUS)       AS(EQUAL)                   &none           &none
             >;
         };
