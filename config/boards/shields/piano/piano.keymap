@@ -92,16 +92,16 @@
 
         nav {
             bindings = <
-                                &none           &kp PG_UP       &none                       &none           &kp UP          &none
-                &none           &kp HOME        &kp PG_DN       &kp END                     &kp LEFT        &kp DOWN        &kp RIGHT       &kp RPAR
-                                                &none           &none                       &none           &kp LPAR
+                                &none           &kp PG_UP        &none                      &none           &kp UP          &none
+                &none           &mt LALT HOME   &mt LSHIFT PG_DN &mt LCTL END               &mt RCTL LEFT   &mt RSHIFT DOWN &mt RALT RIGHT  &kp RPAR
+                                                &none            &none                      &none           &kp LPAR
             >;
         };
 
         fun {
             bindings = <
                                 &kp PSCRN       &kp F2          &kp F5                      &none           &caps_word           &none
-                &none           &kp F10         &kp F11         &as LC(F12) F12             AS(SQT)         &none           &none           &none
+                &none           &kp F10         &kp F11         &kp F12                     AS(SQT)         &none           &none           &none
                                                 &none           &none                       &none           &none
             >;
         };
