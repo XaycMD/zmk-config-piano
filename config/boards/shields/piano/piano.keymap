@@ -77,7 +77,7 @@
         alpha2 {
             bindings = <
                                 &kp V           &kp W           &kp M                       &kp F           &kp COMMA       &kp Z
-                &kp Q           &kp J           &mt LSHIFT P    &kp K                       &kp B           &mt DOT         &kp X           &kp Y
+                &kp Q           &kp J           &mt LSHIFT P    &kp K                       &kp B           &mt RSHIFT DOT  &kp X           &kp Y
                                                 &trans          &trans                      &trans          &trans
             >;
         };
